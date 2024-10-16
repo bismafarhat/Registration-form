@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      #img {
+        width: 70%;
+        height: 140px;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        font-size: 30px;
+        /* margin-left: 200px; */
+      }
+      #para {
+        font-size: 20px;
+      }
+      .container {
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: -30px;
+        /* border: 1px; */
+        /* border-radius: 20px; */
+        background-color: rgb(231, 251, 255);
+        padding: 40px;
+      }
+      #name {
+        margin-left: 20px;
+      }
+      /* #footer{
+        height: 20px;
+        width: 20px;
+        background-color: blue;
+      } */
+      input::placeholder{
+        width: 200px;
+        height: 20px;
+      }
+      #btn{
+        width:80px;
+        height: 30px;
+        padding: 3px;
+        background-color: rgb(72, 154, 201);
+        color: white;
+        border: none;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><img src="img.jpg" id="img" alt="wallpaper" /></div>
+    <form class="container">
+      <!-- <div > -->
+      <p>STUDENT REGISTRATION FORM</p>
+      <!-- PERSONAL INFORMATION -->
+      <p id="para">PERSONAL INFORMATION</p>
+      <label>First Name:</label>
+      <input type="text" placeholder="Enter your first name" />
+      <label id="name">Middle Name:</label>
+      <input type="text" placeholder="Enter your middle name" />
+      <label  id="name">Last Name:</label>
+      <input type="text" placeholder="Enter your last name" />
+      <br /><br /> 
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email" />
+      <label  id="name">Password:</label>
+      <input type="password" placeholder="Enter your password" />
+      <label  id="name">Contact No:</label>
+      <input type="number" placeholder="Enter your father contact no" />
+      <br /><br />
+      <label  >Gender:</label>
+      <label id="name">Male</label>
+      <input type="radio" name="gender" />
+      <label>Female</label>
+      <input type="radio" name="gender" />
+      <label  id="name">Date of Birth:</label>
+      <input type="date" />
+      <label  id="name">Degree End Time:</label>
+      <input type="datetime-local" />
+      <br /><br />
+      <label>Courses:</label>
+      <br /><br>
+      <label>Advance Web</label>
+      <input type="checkbox" />
+      <label  id="name">Full Stack Development</label>
+      <input type="checkbox" />
+      <label  id="name">Mobile Application Development</label>
+      <input type="checkbox" />
+      <label  id="name">Freelancing</label>
+      <input type="checkbox" checked disabled />
+      <br><br>
+      <label>Favourite Color:</label>
+      <input type="color" />
+      <label  id="name">Martial Status:</label>
+      <input type="text" placeholder="Enter your martial name" />
+      <label  id="name">Nationality:</label>
+      <input type="text" placeholder="Enter your nationality" />
+      <br><br><br>
+      <label>Country:</label>
+      <input type="text" placeholder="Enter your country name" />
+      <label  id="name">Degree documents:</label>
+      <input type="file" > <br><br>
+
+      <!-- PARENTS INFORMATION -->
+      <p id="para">PARENTS INFORMATION</p>
+      <label>Father Name:</label>
+      <input type="text" placeholder="Enter your father name" />
+      <label  id="name">Occupation:</label>
+      <input type="text" placeholder="Enter your father occupation" />
+      <label  id="name">Salary:</label>
+      <input type="number" placeholder="Enter your father salary" />
+      <br><br>
+      <label>CNIC No:</label>
+      <input type="number" placeholder="Enter your father CNIC No" />
+      <label  id="name">Contact No:</label>
+      <input type="number" placeholder="Enter your contact no" />
+      <br /><br />
+      <label>Mother Name:</label>
+      <input type="text" placeholder="Enter your mother name" />
+      <label  id="name">Occupation:</label>
+      <input type="text" placeholder="Enter your mother occupation" />
+      <label  id="name">Salary:</label>
+      <input type="number" placeholder="Enter your mother salary" />
+      <br><br>
+      <label>CNIC No:</label>
+      <input type="number" placeholder="Enter your mother CNIC No" />
+      <label  id="name">Contact No:</label>
+      <input type="number" placeholder="Enter your mother contact no" />
+      <br /><br />
+      <!-- Address information -->
+      <p id="para">ADDRESS INFORMATION</p>
+      <label>Present Address:</label>
+      <input placeholder="Enter your address here" ></input>
+      <label  id="name">The City:</label>
+      <input type="text" placeholder="Enter your city" />
+      <label  id="name">Zip Code:</label>
+      <input type="number" placeholder="Enter your zip code" />
+      <br><br>
+      <label >Present State:</label>
+      <input type="text" placeholder="Enter your prsent state" />
+      <p id="para">ANY QUESTION</p>
+      <textarea placeholder="Type your message here"></textarea><br>
+      <p id="para">Range Our Institude</p>
+      <input type="range"><br><br>
+      <input type="button" value="Submit" id="btn">
+      <button type="button" id= "btn" >Reset</button>
+     
+      <!-- <div id="footer"><img src="img.jpg" alt=""></div> -->
+      <!-- </div> -->
+    </form>
+  </body>
+</html>
